@@ -1,0 +1,6 @@
+file,totalLines,codeLines,commentLines,blankLines,complexity,commentRatio,methods,classes,maintainabilityIndex,cognitiveComplexity,halsteadVolume,riskScore,commits,churnRate,findings
+"example.py",11,8,1,2,3,9.1,2,1,64.1,2,178.4,0.0,0,0.00,""
+"example.js",10,8,1,1,2,10.0,1,0,64.9,2,144.0,0.0,0,0.00,""
+"notes.txt",5,5,0,0,3,0.0,0,0,68.0,1,215.4,0.0,0,0.00,""
+"SimpleExample.java",22,14,3,5,1,13.6,3,2,56.5,0,423.9,0.0,0,0.00,""
+"ComplexExample.java",41,35,3,3,8,7.3,2,2,43.9,19,1105.5,0.0,0,0.00,""

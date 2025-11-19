@@ -1,0 +1,101 @@
+════════════════════════════════════════════
+  CODE ANALYSIS DETAILED REPORT
+════════════════════════════════════════════
+
+Generated: Tue Nov 18 00:38:00 IST 2025
+
+File: ComplexExample.java
+  Lines of Code: 35
+  Cyclomatic Complexity: 8
+  Documentation: 7.3%
+
+  Advanced Metrics:
+    Maintainability Index: 43.9
+    Cognitive Complexity: 19
+    Halstead Volume: 1105.5
+    Halstead Difficulty: 29.0
+    Halstead Effort: 32021.1
+
+  Code Churn:
+    Commits: 0
+    Lines Added: 0
+    Lines Deleted: 0
+    Churn Rate: 0.00 commits/day
+    Authors: 0
+
+File: example.js
+  Lines of Code: 8
+  Cyclomatic Complexity: 2
+  Documentation: 10.0%
+
+  Advanced Metrics:
+    Maintainability Index: 64.9
+    Cognitive Complexity: 2
+    Halstead Volume: 144.0
+    Halstead Difficulty: 9.2
+    Halstead Effort: 1320.0
+
+  Code Churn:
+    Commits: 0
+    Lines Added: 0
+    Lines Deleted: 0
+    Churn Rate: 0.00 commits/day
+    Authors: 0
+
+File: example.py
+  Lines of Code: 8
+  Cyclomatic Complexity: 3
+  Documentation: 9.1%
+
+  Advanced Metrics:
+    Maintainability Index: 64.1
+    Cognitive Complexity: 2
+    Halstead Volume: 178.4
+    Halstead Difficulty: 13.7
+    Halstead Effort: 2446.8
+
+  Code Churn:
+    Commits: 0
+    Lines Added: 0
+    Lines Deleted: 0
+    Churn Rate: 0.00 commits/day
+    Authors: 0
+
+File: notes.txt
+  Lines of Code: 5
+  Cyclomatic Complexity: 3
+  Documentation: 0.0%
+
+  Advanced Metrics:
+    Maintainability Index: 68.0
+    Cognitive Complexity: 1
+    Halstead Volume: 215.4
+    Halstead Difficulty: 3.9
+    Halstead Effort: 834.8
+
+  Code Churn:
+    Commits: 0
+    Lines Added: 0
+    Lines Deleted: 0
+    Churn Rate: 0.00 commits/day
+    Authors: 0
+
+File: SimpleExample.java
+  Lines of Code: 14
+  Cyclomatic Complexity: 1
+  Documentation: 13.6%
+
+  Advanced Metrics:
+    Maintainability Index: 56.5
+    Cognitive Complexity: 0
+    Halstead Volume: 423.9
+    Halstead Difficulty: 14.4
+    Halstead Effort: 6104.6
+
+  Code Churn:
+    Commits: 0
+    Lines Added: 0
+    Lines Deleted: 0
+    Churn Rate: 0.00 commits/day
+    Authors: 0
+

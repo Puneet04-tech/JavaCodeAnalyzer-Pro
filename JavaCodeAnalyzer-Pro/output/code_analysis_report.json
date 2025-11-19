@@ -1,0 +1,135 @@
+{
+  "generated": "Tue Nov 18 00:19:45 IST 2025",
+  "files": [
+    {
+      "file": "ComplexExample.java",
+      "totalLines": 41,
+      "codeLines": 35,
+      "commentLines": 3,
+      "blankLines": 3,
+      "complexity": 8,
+      "documentation": "7.3%",
+      "methods": 2,
+      "classes": 2,
+      "maintainabilityIndex": 43.9,
+      "cognitiveComplexity": 19,
+      "halsteadVolume": 1105.5,
+      "halsteadDifficulty": 29.0,
+      "halsteadEffort": 32021.1,
+      "riskScore": 0.0,
+      "churn": {
+        "commits": 0,
+        "linesAdded": 0,
+        "linesDeleted": 0,
+        "churnRate": 0.00,
+        "authors": 0
+      },
+      "findings": [
+      ]
+    },
+    {
+      "file": "example.js",
+      "totalLines": 10,
+      "codeLines": 8,
+      "commentLines": 1,
+      "blankLines": 1,
+      "complexity": 2,
+      "documentation": "10.0%",
+      "methods": 1,
+      "classes": 0,
+      "maintainabilityIndex": 64.9,
+      "cognitiveComplexity": 2,
+      "halsteadVolume": 144.0,
+      "halsteadDifficulty": 9.2,
+      "halsteadEffort": 1320.0,
+      "riskScore": 0.0,
+      "churn": {
+        "commits": 0,
+        "linesAdded": 0,
+        "linesDeleted": 0,
+        "churnRate": 0.00,
+        "authors": 0
+      },
+      "findings": [
+      ]
+    },
+    {
+      "file": "example.py",
+      "totalLines": 11,
+      "codeLines": 8,
+      "commentLines": 1,
+      "blankLines": 2,
+      "complexity": 3,
+      "documentation": "9.1%",
+      "methods": 2,
+      "classes": 1,
+      "maintainabilityIndex": 64.1,
+      "cognitiveComplexity": 2,
+      "halsteadVolume": 178.4,
+      "halsteadDifficulty": 13.7,
+      "halsteadEffort": 2446.8,
+      "riskScore": 0.0,
+      "churn": {
+        "commits": 0,
+        "linesAdded": 0,
+        "linesDeleted": 0,
+        "churnRate": 0.00,
+        "authors": 0
+      },
+      "findings": [
+      ]
+    },
+    {
+      "file": "notes.txt",
+      "totalLines": 5,
+      "codeLines": 5,
+      "commentLines": 0,
+      "blankLines": 0,
+      "complexity": 3,
+      "documentation": "0.0%",
+      "methods": 0,
+      "classes": 0,
+      "maintainabilityIndex": 68.0,
+      "cognitiveComplexity": 1,
+      "halsteadVolume": 215.4,
+      "halsteadDifficulty": 3.9,
+      "halsteadEffort": 834.8,
+      "riskScore": 0.0,
+      "churn": {
+        "commits": 0,
+        "linesAdded": 0,
+        "linesDeleted": 0,
+        "churnRate": 0.00,
+        "authors": 0
+      },
+      "findings": [
+      ]
+    },
+    {
+      "file": "SimpleExample.java",
+      "totalLines": 22,
+      "codeLines": 14,
+      "commentLines": 3,
+      "blankLines": 5,
+      "complexity": 1,
+      "documentation": "13.6%",
+      "methods": 3,
+      "classes": 2,
+      "maintainabilityIndex": 56.5,
+      "cognitiveComplexity": 0,
+      "halsteadVolume": 423.9,
+      "halsteadDifficulty": 14.4,
+      "halsteadEffort": 6104.6,
+      "riskScore": 0.0,
+      "churn": {
+        "commits": 0,
+        "linesAdded": 0,
+        "linesDeleted": 0,
+        "churnRate": 0.00,
+        "authors": 0
+      },
+      "findings": [
+      ]
+    }
+  ]
+}
