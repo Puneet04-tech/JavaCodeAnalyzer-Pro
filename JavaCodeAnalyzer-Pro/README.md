@@ -214,12 +214,34 @@ If you'd like, I can add a `build.bat` that produces the runnable JAR automatica
 
 ## Sample Output
 
-```
-╔════════════════════════════════════════╗
-║          ANALYSIS RESULTS             ║
-╚════════════════════════════════════════╝
+## Advanced Metrics (new)
 
-File: CodeAnalyzer.java
+This release adds a set of enterprise-oriented metrics per file and aggregated in reports:
+
+- **Halstead Metrics**: Vocabulary, Length, Volume, Difficulty, Effort — estimated implementation complexity and effort.
+- **Maintainability Index (MI)**: Composite score (0-100) indicating ease of maintenance (higher is better).
+- **Cognitive Complexity**: A nesting-aware complexity metric focusing on human understandability.
+- **Git Churn Metrics**: Commit count, lines added/deleted, number of authors, churn rate (commits/day).
+- **Risk Score**: Heuristic combining MI, churn, and cognitive complexity to highlight risky files.
+
+Each analyzed file contains an `advancedMetrics` block in JSON-like reports and the HTML dashboard. The HTML dashboard displays interactive charts for these values and a sortable file table.
+
+### How to interpret
+
+- Halstead Volume: larger numbers imply more mental effort to understand the file.
+- Maintainability Index: values > 85 = excellent, 65-85 = moderate, < 65 = needs attention.
+- Cognitive Complexity: lower is better; favors flatter, simpler control flow.
+- Churn: high recent churn with low MI indicates risky churn.
+
+
+## Sample Output (with Advanced Metrics)
+
+```
+╔════════════════════════════════════════════════════════╗
+║                   ANALYSIS RESULTS                     ║
+╚════════════════════════════════════════════════════════╝
+
+File: src/analyzer/CodeAnalyzer.java
   Total Lines: 250
   Code Lines: 180
   Comment Lines: 45
@@ -227,12 +249,28 @@ File: CodeAnalyzer.java
   Cyclomatic Complexity: 12
   Comment Ratio: 18.0%
   Methods: 8 | Classes: 1
-  Quality: ⭐⭐ GOOD
+
+  Advanced Metrics:
+    Halstead: Volume=1320.4, Difficulty=24.3, Effort=32053
+    Maintainability Index: 62.4
+    Cognitive Complexity: 18
+    Git Churn: commits=12, linesAdded=184, linesDeleted=50, authors=3, churnRate=0.12 commits/day
+    Risk Score: 0.72 (0-1, higher = more risky)
+
+  Quality: ⭐⭐ NEEDS ATTENTION
 
 SUMMARY:
-Average Complexity: 12.0
-Average Comment Ratio: 18.0%
-Total Code Lines: 180
+  Files Analyzed: 5
+  Average Cyclomatic Complexity: 6.4
+  Average Maintainability Index: 71.8
+  Total Code Lines: 720
+  High-Risk Files: 2
+
+Reports saved to:
+  - output/code_analysis_report.txt
+  - output/code_analysis_report.csv
+  - output/code_analysis_report.json
+  - output/dashboard.html (interactive)
 ```
 
 ---
