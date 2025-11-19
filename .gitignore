@@ -1,0 +1,23 @@
+# Build / output
+bin/
+output/
+dist/
+*.class
+*.jar
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.idea/
+.vscode/
+*.iml
+
+# Logs and environment
+*.log
+.env
+
+# Misc
+temp/
+node_modules/
