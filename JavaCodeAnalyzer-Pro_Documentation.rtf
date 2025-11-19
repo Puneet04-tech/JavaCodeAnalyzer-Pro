@@ -1,0 +1,45 @@
+{\rtf1\ansi\deff0
+{\fonttbl{\f0\fswiss Helvetica;}{\f1\froman Times New Roman;}}
+{\colortbl;\red0\green0\blue0;}
+\fs28\b JavaCodeAnalyzer-Pro Documentation\b0\par
+\fs20\par
+\b Overview\b0\par
+JavaCodeAnalyzer-Pro is a lightweight, dependency-free static analysis tool written in pure Java that inspects source trees to compute code quality metrics, detect duplicate blocks and likely secrets, and produce human-friendly reports including an interactive HTML dashboard. The tool is implemented using only Java SE APIs (no external libraries), making it portable and easy to run in constrained environments.\par
+\par
+\b Key Features\b0\par
+- Complexity metrics: Cyclomatic Complexity and Cognitive Complexity.\par
+- Halstead metrics: Vocabulary, Length, Volume, Difficulty, Effort.\par
+- Maintainability Index (MI) for quick health scoring.\par
+- Duplicate code detection and secrets scanning (regex + entropy heuristics).\par
+- Git churn analysis (commits, lines added/deleted, authors) when run inside a Git repository.\par
+- Parallel scanning support for large codebases and configurable file filters.\par
+- Multiple export formats: human-readable text, CSV, JSON, and an interactive HTML dashboard (`output/dashboard.html`).\par
+\par
+\b Architecture & Implementation\b0\par
+The project follows a layered design: an analysis core in `src/analyzer` orchestrates scanning, utilities in `src/utils` perform metric calculations (Halstead, Cognitive Complexity, Secrets detection), and data models in `src/model` store results (including `AdvancedMetrics` and `ChurnMetrics`). Concurrency is handled via `ExecutorService`. Reports are generated to `output/` and the HTML dashboard is built with Chart.js (CDN).\par
+\par
+\b Usage (Quick Start)\b0\par
+1. Compile: run `compile.bat` to build sources into `bin/`.\par
+2. Analyze: run (example) `java -cp bin analyzer.CodeAnalyzerMain data\\test --format=html`.\par
+3. Open dashboard: `Start-Process "output\\dashboard.html"`.\par
+4. Useful flags: `--format=text|json|csv|html`, `--parallel`, `--ext=.java,.py,.js`, `--exclude`, `--exclude-glob`.\par
+\par
+\b Advanced Metrics (Interpretation)\b0\par
+- Halstead Volume: higher values indicate greater information content and typically more effort to understand.\par
+- Maintainability Index: 0-100 (higher is better). Values below 65 may need attention.\par
+- Cognitive Complexity: lower is better; penalizes deeply nested structures.\par
+- Git Churn: files with high churn + low MI are maintenance hotspots.\par
+\par
+\b Files & Outputs\b0\par
+- `output/code_analysis_report.txt` — text report.\par
+- `output/code_analysis_report.csv` — CSV export.\par
+- `output/code_analysis_report.json` — JSON export.\par
+- `output/dashboard.html` — interactive HTML dashboard.\par
+\par
+\b Extensibility & Roadmap\b0\par
+The language heuristics are modular; adding support for another language requires implementing tokenization and control-flow heuristics. Planned work includes improved duplication detection, per-method breakdowns, SARIF export, and CI quality gates.\par
+\par
+\b Contact\b0\par
+For issues or feature requests, open an issue on the GitHub repository: https://github.com/Puneet04-tech/JavaCodeAnalyzer-Pro\par
+
+}
