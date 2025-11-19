@@ -316,3 +316,13 @@ For issues, questions, or feature requests, please open an issue on the project 
 ---
 
 **Built with ❤️ using pure Java - Zero external dependencies**
+Quick Start:
+1. Run `compile.bat` to build the project.
+2. Analyze a directory: `java -cp bin analyzer.CodeAnalyzerMain data\test --format=html`
+3. Open the dashboard: `Start-Process "output\dashboard.html"`
+4. Enable parallel processing for speed: `--parallel`
+5. Filter by extensions: `--ext=.java,.py,.js`
+6. Export machine-readable output for CI: `--format=json`
+7. For churn metrics run inside a Git repository with `git` available on PATH.
+8. Report issues or request features by opening an issue on the GitHub repo.
+9. Enjoy exploring code health!
